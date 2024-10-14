@@ -1,0 +1,10 @@
+{
+  "directoryToTest": "C:/Clients/chewymole.com/wwwroot/",
+  "runTestBox": true,
+  "lintRules": [
+    {
+      "id": "no-unused-vars",
+      "severity": "error"
+    }
+  ]
+}

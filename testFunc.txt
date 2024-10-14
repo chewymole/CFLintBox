@@ -1,0 +1,26 @@
+
+function |FUNCNAME|_LintTest(){    
+    var f = expandPath("./results/|FN|");
+    if(fileExists(f)){
+        var j = deserializeJson(fileRead(f));
+        if(structKeyExists(j, 'counts') 
+            AND structKeyExists(j.counts, 'countBySeverity')
+            AND arrayLen(j.counts.countBySeverity) > 0){            
+                var ce = 0;
+                var cw = 0;
+                for(var i in j.counts.countBySeverity){
+                    if(i['severity'] EQ "error"){
+                        ce = ce + i['count'];
+                    } else if(i['severity'] EQ "warning"){
+                        cw = cw + i['count'];
+                    }
+                }
+                var r = ce + cw;
+                $assert.isTrue(r EQ 0,"File contains #r# CFLint errors and/or warnings. Please review the /results/|FN| for more information.");                        
+        } else {
+            $assert.isTrue(false,'File does not contain any lint result counts, please review the /results/|FN| for more information.');
+        }
+    } else {
+        $assert.isTrue(true,'nothing wrong here');
+    }
+}

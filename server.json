@@ -1,0 +1,16 @@
+{
+    "name":"CFLintBox",
+    "profile":"development",
+    "app":{
+        "cfengine":"lucee@6.1.0"
+    },
+    "web":{
+        "host":"localhost",
+        "http":{
+            "port":8283
+        }
+    },
+    "JVM":{
+        "heapSize":"8192"
+    }
+}

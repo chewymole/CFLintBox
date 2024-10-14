@@ -1,0 +1,61 @@
+{
+  "author": "Chewymole",
+  "bugs": "",
+  "changelog": "",
+  "contributors": [],
+  "dependencies": {
+    "testbox": "^6.0.0+8"
+  },
+  "description": "CF Auto CFLinter testBox builder / Runner",
+  "devDependencies": {},
+  "documentation": "https://github.com/chewymole/CFLintBox",
+  "homepage": "https://github.com/chewymole/CFLintBox",
+  "ignore": ["**/.*", "/test/", "/tests/"],
+  "installPaths": {
+    "testbox": "testbox/"
+  },
+  "instructions": "",
+  "keywords": [],
+  "license": [
+    {
+      "type": "BSD 2-Clause License",
+      "URL": "https://github.com/chewymole/CFLintBox/blob/main/LICENSE"
+    }
+  ],
+  "location": "github.com/chewymole/CFLintBox",
+  "name": "CFLintBox",
+  "private": false,
+  "projectURL": "https://github.com/chewymole/CFLintBox/",
+  "reinitWatchDelay": 500,
+  "reinitWatchDirectory": "",
+  "reinitWatchPaths": "",
+  "repository": {
+    "type": "GitHub",
+    "URL": "https://github.com/chewymole/CFLintBox/"
+  },
+  "scripts": {},
+  "shortDescription": "CFLintBox",
+  "slug": "cflintbox",
+  "testbox": {
+    "bundles": "",
+    "directory": "specs",
+    "excludes": "",
+    "labels": "",
+    "options": {},
+    "recurse": true,
+    "reporter": "",
+    "runner": [
+      {
+        "default": ""
+      }
+    ],
+    "testBundles": "",
+    "testSpecs": "",
+    "testSuites": "",
+    "verbose": true,
+    "watchDelay": 500,
+    "watchPaths": "**.cf*"
+  },
+  "type": "modules",
+  "version": "0.0.1"
+}
